@@ -1,5 +1,9 @@
 plugins {
     kotlin("jvm") version "2.1.20"
+    application
+}
+application {
+    mainClass = "io.github.ajcode404.MainKt"
 }
 
 group = "io.github.ajcode404"
