@@ -1,5 +1,5 @@
 package io.github.ajcode404
-g
+
 fun productArrayWithDivision(input: Array<Int>): Array<Int> {
     val arr = Array(input.size) { 0 }
     var product: Int = 1
