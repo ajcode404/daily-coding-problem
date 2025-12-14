@@ -1,4 +1,4 @@
-package io.github.ajcode404
+package io.github.ajcode404.dcp
 
 fun productArrayWithDivision(input: Array<Int>): Array<Int> {
     val arr = Array(input.size) { 0 }

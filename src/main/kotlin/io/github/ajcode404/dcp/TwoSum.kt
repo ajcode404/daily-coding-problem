@@ -1,4 +1,4 @@
-package io.github.ajcode404
+package io.github.ajcode404.dcp
 
 /**
  * This problem was recently asked by Google.
