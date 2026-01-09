@@ -4,7 +4,7 @@ import java.util.Arrays
 import java.util.Stack
 
 
-class Solution {
+private class Solution {
     data class Interval(
         val x: Int,
         val y: Int
@@ -40,8 +40,8 @@ class Solution {
 
 fun main() {
     val arr = arrayOf(intArrayOf(1,3), intArrayOf(2,6),intArrayOf(8,10),intArrayOf(15,18))
-    ValidParenthesis().merge(arr).forEach {
-        println(Arrays.toString(it))
+    Solution().merge(arr).forEach {
+        println(it.contentToString())
     }
 
 }
