@@ -1,13 +1,13 @@
 package io.github.ajcode404.taro
 
 class LongestPalindromeSubstring {
-    fun longestPalindrome(s: String): String {
+    fun longestPalindromeV1(s: String): String {
         if (s.length <= 1) {
             return s
         }
         var lp = ""
         for (i in 0..s.length - 1) {
-            for (j in i + 1..s.length - 1) {
+            for (j in i + 1..s.length) {
                 val ss = s.substring(i, j)
                 if (isPalindrome(ss)) {
                     if (lp.length < ss.length) {
@@ -26,5 +26,5 @@ class LongestPalindromeSubstring {
 }
 
 fun main() {
-    LongestPalindromeSubstring().longestPalindrome("cbbd").print()
+    LongestPalindromeSubstring().longestPalindromeV1("ac").print()
 }
