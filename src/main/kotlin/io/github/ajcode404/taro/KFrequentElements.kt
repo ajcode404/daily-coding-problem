@@ -11,6 +11,17 @@ class KFrequentElements {
     val priorityQueue = PriorityQueue<Ele>(compareByDescending { it.frequency })
 
     fun topKFrequent(nums: IntArray, k: Int): IntArray {
+        return withPriorityQueue(nums, k)
+    }
+
+    private fun shortOne(nums: IntArray, k: Int): IntArray {
+        nums.forEach {
+            countMap[it] = (countMap[it] ?: 0) + 1
+        }
+        return countMap.entries.sortedByDescending { it.value }.take(k).map { it.key }.toIntArray()
+    }
+
+    private fun withPriorityQueue(nums: IntArray, k: Int): IntArray {
         nums.forEach {
             countMap[it] = (countMap[it] ?: 0) + 1
         }
